@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>メンテナンス中です</title>
+</head>
+<style>
+    body {
+        background-color: #fbf9f8;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        text-align: center;
+    }
+    .container {
+        background: white;
+        padding: 40px 30px;
+        border-radius: 12px;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        max-width: 450px;
+    }
+    h1 {
+        font-size: 2rem;
+        color: #c74634;
+        margin-bottom: 15px;
+    }
+    p {
+        font-size: 1.1rem;
+        margin-bottom: 25px;
+    }
+    .spinner {
+        border: 6px solid #fbf9f8;
+        border-top: 6px solid #c74634;
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        animation: spin 1s linear infinite;
+        margin: 0 auto 20px;
+        }
+    @keyframes spin {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="spinner"></div>
+        <h1>現在メンテナンス中です</h1>
+        <p>
+            ご不便をおかけして申し訳ありません。<br>
+            しばらく経ってから再度アクセスしてください。
+        </p>
+    </div>
+</body>
+</html>
