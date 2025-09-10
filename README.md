@@ -33,6 +33,11 @@ DoS, SQL Injection, XSS のシミュレーションを実行し、WAFが正常�
 git clone https://github.com/koi141/oci-waf-tester
 ```
 
+作成したディレクトリに移動します。
+```
+cd oci-waf-tester
+```
+
 関連するスクリプトに実行権限を付与します。
 ```
 chmod +x waf-test.sh setup.sh attacks/*.sh
