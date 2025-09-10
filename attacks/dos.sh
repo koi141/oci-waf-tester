@@ -24,8 +24,8 @@ if [[ "$code" == "200" ]]; then
     echo "[✓] Connectivity OK  -> ${url} (HTTP ${code})"
     echo
 else
-    echo "[!] Unable to connect to ${url}"
-    exit 1
+    echo "[!] Unable to connect to ${url} (HTTP ${code})"
+    echo 
 fi
 
 # 攻撃コマンド実行
@@ -51,3 +51,4 @@ echo '----------------------------------------------------------'
 echo '[+] Completed.'
 echo '=========================================================='
 echo
+sleep 3

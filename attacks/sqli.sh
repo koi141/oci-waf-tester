@@ -24,7 +24,8 @@ if [[ "$code" == "200" ]]; then
     echo "[✓] Connectivity OK  -> ${url} (HTTP ${code})"
     echo
 else
-    echo "[!] Unable to connect to ${url} (HTTP ${code}"
+    echo "[!] Unable to connect to ${url} (HTTP ${code})"
+    echo
 fi
 
 
@@ -72,3 +73,4 @@ echo '----------------------------------------------------------'
 echo '[+] Completed.'
 echo '=========================================================='
 echo
+sleep 3
